@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    ports:
+      - "3000:3000"
+      - "3035:3035"
+    command: ./bin/server
+    volumes:
+      - .:/app
+      - bundle:/usr/local/bundle
+    environment:
+      - WEBPACKER_DEV_SERVER_HOST=web
+    depends_on:
+      - db
+  db:
+    build: db
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+    ports:
+      - '3306:3306'
+    volumes:
+      - mysql_data:/var/lib/mysql
+volumes:
+  bundle:
+  mysql_data:
