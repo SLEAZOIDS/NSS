@@ -1,34 +1,36 @@
 {
-  "application.js": "/packs/application-8c5d480d8dcd9929ae8e.js",
-  "application.js.map": "/packs/application-8c5d480d8dcd9929ae8e.js.map",
+  "application.js": "/packs/application-5f6ab9aaaa4d058cb9d9.js",
+  "application.js.map": "/packs/js/application-9cb68e7c62114162284a.hot-update.js.map",
   "entrypoints": {
     "application": {
       "js": [
-        "/packs/application-8c5d480d8dcd9929ae8e.js"
+        "/packs/application-5f6ab9aaaa4d058cb9d9.js"
       ],
       "js.map": [
-        "/packs/application-8c5d480d8dcd9929ae8e.js.map"
+        "/packs/application-5f6ab9aaaa4d058cb9d9.js.map",
+        "/packs/js/application-9cb68e7c62114162284a.hot-update.js.map"
       ]
     },
     "hello_typescript": {
       "js": [
-        "/packs/hello_typescript-8c5d480d8dcd9929ae8e.js"
+        "/packs/hello_typescript-5f6ab9aaaa4d058cb9d9.js"
       ],
       "js.map": [
-        "/packs/hello_typescript-8c5d480d8dcd9929ae8e.js.map"
+        "/packs/hello_typescript-5f6ab9aaaa4d058cb9d9.js.map"
       ]
     },
     "hello_vue": {
       "js": [
-        "/packs/hello_vue-8c5d480d8dcd9929ae8e.js"
+        "/packs/hello_vue-5f6ab9aaaa4d058cb9d9.js"
       ],
       "js.map": [
-        "/packs/hello_vue-8c5d480d8dcd9929ae8e.js.map"
+        "/packs/hello_vue-5f6ab9aaaa4d058cb9d9.js.map",
+        "/packs/js/hello_vue-9cb68e7c62114162284a.hot-update.js.map"
       ]
     }
   },
-  "hello_typescript.js": "/packs/hello_typescript-8c5d480d8dcd9929ae8e.js",
-  "hello_typescript.js.map": "/packs/hello_typescript-8c5d480d8dcd9929ae8e.js.map",
-  "hello_vue.js": "/packs/hello_vue-8c5d480d8dcd9929ae8e.js",
-  "hello_vue.js.map": "/packs/hello_vue-8c5d480d8dcd9929ae8e.js.map"
+  "hello_typescript.js": "/packs/hello_typescript-5f6ab9aaaa4d058cb9d9.js",
+  "hello_typescript.js.map": "/packs/hello_typescript-5f6ab9aaaa4d058cb9d9.js.map",
+  "hello_vue.js": "/packs/hello_vue-5f6ab9aaaa4d058cb9d9.js",
+  "hello_vue.js.map": "/packs/js/hello_vue-9cb68e7c62114162284a.hot-update.js.map"
 }
