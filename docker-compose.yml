@@ -6,7 +6,7 @@ services:
     ports:
       - "3000:3000"
       - "3035:3035"
-    command: ./bin/server
+    command: /bin/sh -c "rm -f /app/tmp/pids/server.pid && ./bin/server"
     volumes:
       - .:/app
       - bundle:/usr/local/bundle
