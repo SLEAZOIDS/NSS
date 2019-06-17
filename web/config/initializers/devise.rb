@@ -262,7 +262,7 @@ Devise.setup do |config|
   # Add a new OmniAuth provider. Check the wiki for more information on setting
   # up on your models and hooks.
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', scope: 'user,public_repo'
-  config.omniauth :mock, 'TpQ-frXxXQzz7_kaX_sH-yt3KQZae1tXzIelPVDPSG8', '5TMrbPBiNqSa9cgxpfF5HV-I7WfnWzJPfbSnpWwm4OQ', client_options: { site: 'http://localhost:3001' }
+  config.omniauth :mock, 'Pmjjh6S9wYF2ivoZ3gU-2W3A8m_o2seD5ne4AEx9gyA', 'Nvg9p6C1BQHFDKz37b_XTNgjmr3ps3za7lqjNELOo6g', client_options: { site: 'http://localhost:3001' }
   
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
