@@ -2,25 +2,36 @@ version: '3'
 
 services:
   web:
-    build: .
+    build: web
     ports:
       - "3000:3000"
       - "3035:3035"
     command: /bin/sh -c "rm -f /app/tmp/pids/server.pid && ./bin/server"
     volumes:
-      - .:/app
+      - ./web/:/app
       - bundle:/usr/local/bundle
       - /app/node_modules
     environment:
       - WEBPACKER_DEV_SERVER_HOST=web
     depends_on:
       - db
+  provider:
+    build: provider
+    ports:
+      - "3001:3001"
+    command: /bin/sh -c "rm -f /app/tmp/pids/server.pid && bundle exec rails s -p 3001 -b '0.0.0.0'"
+    volumes:
+      - ./provider:/app
+      - bundle:/usr/local/bundle
+      - /app/node_modules
+    depends_on:
+      - db
   db:
-    build: db
+    build: web/db
     environment:
       MYSQL_ROOT_PASSWORD: password
     ports:
-      - '3306:3306'
+      - '3307:3307'
     volumes:
       - mysql_data:/var/lib/mysql
 volumes:
